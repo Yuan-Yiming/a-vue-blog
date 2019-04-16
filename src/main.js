@@ -1,0 +1,22 @@
+// The Vue build version to load with the `import` command
+// import & export ES6语法
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+// Vue类
+import Vue from 'vue';
+import App from './App';  // App.vue
+import router from './router';
+// import CKEditor from '@ckeditor/ckeditor5-vue';
+
+Vue.config.productionTip = false;
+// Vue.use(CKEditor);
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  router,
+  components: { App },
+  template: '<App/>'
+})
+
+
+// index.html ——> main.js ——> App.vue
